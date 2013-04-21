@@ -74,6 +74,7 @@ Vagrant.configure("2") do |config|
     chef.add_recipe "apt::default"
     chef.add_recipe "rvm::vagrant"    
     chef.add_recipe "rvm::system"
+    chef.add_recipe "nginx"
 
     chef.json = {
       "rvm" => {
